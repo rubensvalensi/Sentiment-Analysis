@@ -95,12 +95,6 @@ callbacks = [EarlyStopping(monitor='val_accuracy', patience=0)]
 nn_model.fit(X_train_seq, y_train, batch_size=128, epochs=12, validation_split=0.2, callbacks=callbacks)
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/429e72fa-4e57-46fc-aec4-b871d962998c/Screen_Shot_2021-02-11_at_8.28.02_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/429e72fa-4e57-46fc-aec4-b871d962998c/Screen_Shot_2021-02-11_at_8.28.02_PM.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dee9b7ab-3823-4d8e-8323-3e6fc9380ec6/Screen_Shot_2021-02-11_at_8.28.14_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dee9b7ab-3823-4d8e-8323-3e6fc9380ec6/Screen_Shot_2021-02-11_at_8.28.14_PM.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58a36124-51fa-4563-8239-db17e560e640/Screen_Shot_2021-02-11_at_8.32.28_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58a36124-51fa-4563-8239-db17e560e640/Screen_Shot_2021-02-11_at_8.32.28_PM.png)
-
 - Although we had reached simillar accuracies with the logistic regression model, the NN model was way more consistent. With the logistic regression, every run through would give very different results. Also, the CountVectorizer for the logreg was problematic due to its runtime, this was improved with the NN.
 - This model will still be improved, we are looking into using other layers and methods of preprocessing for improval, but for now, it is providing satisfactory results. On kaggle, the highest accuracy we found for this specific dataset was of 79%, which is just 2% higher than our results.
 
