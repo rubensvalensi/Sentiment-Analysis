@@ -66,7 +66,9 @@ for word, idx in list(w_index.items()):
 
 Note: Although we could have used a pretrained embedding, it is interesting to see how our results are appropriate for tweets. Example: 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f510510-3e17-4129-8418-8f0a05383539/Screen_Shot_2021-02-11_at_8.23.22_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f510510-3e17-4129-8418-8f0a05383539/Screen_Shot_2021-02-11_at_8.23.22_PM.png)
+
+
+
 
 2. Built a NN architecture to predict sentiment
 
